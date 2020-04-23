@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">BackSpace</string>
+
+    <!--Booking-->
+    <string name="title_activity_select_origin">What is your current location?</string>
+    <string name="title_activity_select_destination">What is your desired destination?</string>
+    <string name="title_activity_flight_browse">Upcoming Flights</string>
+    <string name="title_activity_travel_class">How do you want to spend your time?</string>
+    <string name="title_activity_additional_options">Additional daily expenses</string>
+    <string name="title_activity_book_review">Review your booking</string>
+    <string name="title_activity_flight_detail">Flight details</string>
+    <string name="title_activity_purchase_ticket">Purchase ticket</string>
+
+    <!--<string name="title_activity_book">Booking</string>-->
+    <!--<string name="title_activity_earth_info">EarthInfo</string>-->
+    <!--<string name="title_activity_book_review">SpaceSuitRental</string>-->
+
+    <!--Track flights-->
+    <string name="title_activity_flight_status">Ongoing Flights</string>
+    <string name="title_activity_flight_info">Ongoing Flight info</string>
+
+
+    <!--Browse planets-->
+    <string name="title_activity_planet_list">List of Destinations</string>
+    <string name="title_activity_planet_info">Planet Info</string>
+
+    <!--Other-->
+    <string name="title_activity_listview">List view</string>
+    <string name="title_vr">Virtual Reality</string>
+
+    <!--Actions-->
+    <string name="action_scroll_down">scroll down</string>
+
+    <!--Messages-->
+    <string name="fatalError">Fatal error</string>
+    <string name="warning">Warning</string>
+
+</resources>

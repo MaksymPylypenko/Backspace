@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/colorPrimary"
+android:fillViewport="true">
+
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/title_activity_book_review"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:padding="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="tap on icon to change"
+        android:textSize="20sp"
+        android:textColor="@color/black_light"
+        android:paddingBottom="50sp"/>
+
+    <!--row 1 start-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:gravity="center_horizontal">
+
+        <!--origin text start -->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="23dp"
+            android:gravity="right">
+            <TextView
+                android:id="@+id/origin_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Earth"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="origin"
+                android:textColor="@color/black_light"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <!--origin text end-->
+
+        <Button
+            android:id="@+id/btn_origin"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:drawableTop="@drawable/ic_earth"
+            android:drawablePadding="10dp"
+            android:text="25 JAN 2018"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:background="@null"/>
+
+        <!--arrow start-->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fuel cost"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:drawableBottom="@drawable/ic_long_arrow"/>
+
+            <TextView
+                android:id="@+id/fuel_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="100200 $"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/money" />
+
+        </LinearLayout>
+        <!--arrow end-->
+
+        <Button
+            android:id="@+id/btn_destination"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:drawableTop="@drawable/ic_jupiter"
+            android:drawablePadding="10dp"
+            android:text="01 SEP 2021"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:background="@null"/>
+
+        <!--destination text start -->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="23dp"
+            android:gravity="left">
+            <TextView
+                android:id="@+id/destination_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jupiter"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="destination"
+                android:textColor="@color/black_light"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <!--destination text end-->
+
+    </LinearLayout>
+    <!--row 1 end-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_very_light"
+        android:layout_marginVertical="25sp"/>
+
+    <!--row 2 start -->
+    <LinearLayout
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!--col 1 start -->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="right">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hyper Sleep"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="travel class"
+                android:textColor="@color/black_light"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <!--col 1 end-->
+
+
+        <Button
+            android:id="@+id/btn_travel_class"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Days: 10950"
+            android:textSize="16sp"
+            android:textColor="@color/black_light"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/ic_activities"
+            android:drawablePadding="10dp"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/class_price"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="100200 $"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/money" />
+
+    </LinearLayout>
+    <!--row 2 end-->
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_very_light"
+        android:layout_marginVertical="25sp"/>
+
+    <!--row 3 start -->
+    <LinearLayout
+        android:id="@+id/layout_daily_expenses"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!--col 1 start -->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="right">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Additional"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/ic_tooltip"
+                android:drawablePadding="10sp"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="prepayment"
+                android:textColor="@color/black_light"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <!--col 1 end-->
+
+        <Button
+            android:id="@+id/btn_additional_days"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Days: 0"
+            android:textSize="16sp"
+            android:textColor="@color/black_light"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/ic_vr"
+            android:drawablePadding="10dp"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/items_price"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="0 $"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black_light" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBarDays"
+        style="@style/Widget.AppCompat.SeekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:layout_marginHorizontal="70sp"
+        android:max="100"
+        android:progress="0" />
+    <!--row 3 end-->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="book for"
+        android:textSize="18sp"
+        android:textColor="@color/red_light" />
+
+    <Button
+        android:id="@+id/btn_purchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="111150 $"
+        android:textColor="@color/red"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:layout_marginHorizontal="180dp"
+        android:background="@drawable/button_border_light"
+        android:gravity="center"/>
+
+</TableLayout>
+
+</ScrollView>

@@ -1,0 +1,12 @@
+Features: Browse Spaceflights and reserve tickets
+User stories:
+•	As a customer I can view flights by price, date, and location (Sam)
+o	Price
+o	Date
+o	Location
+•	As a customer I can select and view more info on a specific flight (Sam)
+•	As a customer I can purchase the selected flight (Aaron)
+•	As a rich business-man I can select a business class seat (Max)
+o	Hyper sleep
+o	Matrix
+•	As a parent I can see the flight status of my child coming to visit me (Evan)

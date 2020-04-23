@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.group8.backspace">
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <!--Landing Page-->
+        <activity android:name=".presentation.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--Booking-->
+        <activity
+            android:name=".presentation.book_flight.browse_flights.SelectOrigin"
+            android:label="@string/title_activity_select_origin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".presentation.book_flight.browse_flights.SelectDestination"
+            android:label="@string/title_activity_select_destination"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".presentation.book_flight.browse_flights.FlightDetailActivity"
+            android:label="@string/title_activity_flight_detail" />
+        <activity android:name=".presentation.book_flight.browse_flights.BrowseFlightsCalendar"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".presentation.book_flight.browse_flights.BrowseFlightsList"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".presentation.book_flight.travel_class.SelectTravelClass"
+            android:label="@string/title_activity_travel_class"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".presentation.book_flight.travel_class.SelectDailyExpenses"
+            android:label="@string/title_activity_additional_options"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".presentation.book_flight.ReviewBooking"
+            android:label="@string/title_activity_book_review"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".presentation.book_flight.PurchaseTicket"
+            android:label="@string/title_activity_purchase_ticket"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <!--Browse Planets-->
+        <activity
+            android:name=".presentation.browse_planets.PlanetList"
+            android:label="@string/title_activity_planet_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".presentation.browse_planets.Info"
+            android:label="@string/title_activity_planet_info"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!--Track Flights-->
+        <activity
+            android:name=".presentation.track_flights.FlightStatusList"
+            android:label="@string/title_activity_flight_status"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".presentation.track_flights.StatusDetail"
+            android:label="@string/title_activity_flight_info"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+    </application>
+
+</manifest>

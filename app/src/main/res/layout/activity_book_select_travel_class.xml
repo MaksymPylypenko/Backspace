@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fillViewport="true">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/title_activity_travel_class"
+            android:textSize="24sp"
+            android:padding="20sp"/>
+
+        <TextView
+            android:id="@+id/textViewTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="tap to select"
+            android:textSize="20sp"
+            android:paddingBottom="50sp"
+            android:textColor="#80707070"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/imageEconomy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_hyper_sleep"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/textEconomy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Hyper Sleep"
+                    android:textSize="24sp"
+                    android:textColor=" #0588CC"
+                    android:padding="20sp"/>
+
+                <TextView
+                    android:id="@+id/textEconomyPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="price"
+                    android:textSize="18sp"
+                    android:paddingHorizontal="30sp"
+                    android:paddingVertical="15sp"
+                    android:drawablePadding="15dp"
+                    android:drawableLeft="@drawable/ic_price"/>
+
+                <TextView
+                    android:id="@+id/textEnergyTip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="efficient use of resources"
+                    android:textSize="18sp"
+                    android:paddingHorizontal="30sp"
+                    android:paddingVertical="15sp"
+                    android:drawablePadding="15dp"
+                    android:drawableLeft="@drawable/ic_tooltip"/>
+
+                <TextView
+                    android:id="@+id/textNutrientTip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="nutrient injections"
+                    android:textSize="18sp"
+                    android:paddingHorizontal="30sp"
+                    android:paddingVertical="15sp"
+                    android:drawablePadding="15dp"
+                    android:drawableLeft="@drawable/ic_tooltip"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#33707070" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageBusiness"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_activities"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/textBusiness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Activities"
+                    android:textSize="24sp"
+                    android:textColor=" #0588CC"
+                    android:padding="20sp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/textBusinessPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="price"
+                    android:textSize="18sp"
+                    android:paddingHorizontal="30sp"
+                    android:paddingVertical="15sp"
+                    android:drawablePadding="15dp"
+                    android:drawableLeft="@drawable/ic_price"/>
+
+                <TextView
+                    android:id="@+id/textVRTip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="virtual reality access"
+                    android:textSize="18sp"
+                    android:paddingHorizontal="30sp"
+                    android:paddingVertical="15sp"
+                    android:drawablePadding="15dp"
+                    android:drawableLeft="@drawable/ic_tooltip"/>
+
+                <TextView
+                    android:id="@+id/textSuitTip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="space suit rental"
+                    android:textSize="18sp"
+                    android:paddingHorizontal="30sp"
+                    android:paddingVertical="15sp"
+                    android:drawablePadding="15dp"
+                    android:drawableLeft="@drawable/ic_tooltip"/>
+
+                <TextView
+                    android:id="@+id/textMealTip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="meal plan"
+                    android:textSize="18sp"
+                    android:paddingHorizontal="30sp"
+                    android:paddingVertical="15sp"
+                    android:drawablePadding="15dp"
+                    android:drawableLeft="@drawable/ic_tooltip"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </TableLayout>
+
+</ScrollView>

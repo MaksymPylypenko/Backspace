@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/colorPrimary"
+android:fillViewport="true">
+
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/title_activity_flight_browse"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:padding="20sp"/>
+
+
+    <!--row 1 start-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:gravity="center_horizontal">
+
+        <!--origin text start -->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="35dp"
+            android:gravity="right">
+            <TextView
+                android:id="@+id/origin_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Earth"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="origin"
+                android:textColor="@color/black_light"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <!--origin text end-->
+
+        <ImageView
+            android:src="@drawable/ic_earth"
+            android:id="@+id/origin"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_margin="10dp"
+            android:background="@null"/>
+
+        <ImageView
+            android:src="@drawable/ic_long_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:src="@drawable/ic_jupiter"
+            android:id="@+id/destination"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:background="@null"/>
+
+        <!--destination text start -->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="35dp"
+            android:gravity="left">
+            <TextView
+                android:id="@+id/destination_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jupiter"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="destination"
+                android:textColor="@color/black_light"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <!--destination text end-->
+
+    </LinearLayout>
+    <!--row 1 end-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_very_light"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginVertical="25sp"/>
+
+    <Button
+        android:id="@+id/btn_list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="160dp"
+        android:layout_marginBottom="20dp"
+        android:background="@null"
+        android:drawableStart="@drawable/ic_bullet_list"
+        android:text="SWITCH TO LIST VIEW"
+        android:textColor="@color/black_light"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorSecondary"/>
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mcv_selectionColor="#5BB0FF"
+        app:mcv_showOtherDates="all" />
+
+</TableLayout>
+
+</ScrollView>

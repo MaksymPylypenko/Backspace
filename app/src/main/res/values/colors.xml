@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorSecondary">#F2F2F2</color>
+    <color name="colorPrimaryDark">#797777</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="black">#1D1D1D</color>
+    <color name="black_light">#80535353</color>
+    <color name="black_very_light">#336D6D6D</color>
+
+    <color name="blue">#0588CC</color>
+    <color name="blue_light">#800588CC</color>
+    <color name="red">#FF4848</color>
+    <color name="red_light">#80FF4848</color>
+    <color name="money">#3DA233</color>
+
+
+
+</resources>

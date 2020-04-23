@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fillViewport="true">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/title_activity_additional_options"
+            android:textSize="24sp"
+            android:padding="20sp"/>
+
+        <TextView
+            android:id="@+id/textViewTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/action_scroll_down"
+            android:textSize="20sp"
+            android:paddingBottom="30sp"
+            android:textColor="#80707070"/>
+
+        <TextView
+            android:id="@+id/textViewVR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/title_vr"
+            android:textSize="20sp"
+            android:padding="20sp"
+            android:textColor="#0588CC"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#33707070"
+            android:layout_marginBottom="20sp"/>
+
+        <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textNonePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0$"
+                android:textSize="18sp"
+                android:paddingHorizontal="30sp"
+                android:paddingVertical="15sp" />
+
+            <ImageButton
+                android:id="@+id/imageNone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_none"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center"
+                android:padding="10sp"/>
+
+            <TextView
+                android:id="@+id/textNone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Not needed"
+                android:textSize="18sp"
+                android:padding="20sp"/>
+
+            <CheckBox
+                android:id="@+id/check_none"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="invisible" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textNYCPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="49$"
+                android:textSize="18sp"
+                android:paddingHorizontal="30sp"
+                android:paddingVertical="15sp" />
+
+            <ImageButton
+                android:id="@+id/imageNYC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_nyc"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center"
+                android:padding="10sp"/>
+
+            <TextView
+                android:id="@+id/textNYC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="New York City"
+                android:textSize="18sp"
+                android:padding="20sp"/>
+
+            <CheckBox
+                android:id="@+id/checkNYC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textWWPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="69$"
+                android:textSize="18sp"
+                android:paddingHorizontal="30sp"
+                android:paddingVertical="15sp" />
+
+            <ImageButton
+                android:id="@+id/imageWW"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_ww"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center"
+                android:padding="10sp"/>
+
+            <TextView
+                android:id="@+id/textWW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="West World"
+                android:textSize="18sp"
+                android:padding="20sp"/>
+
+            <CheckBox
+                android:id="@+id/checkWW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+    </RadioGroup> <!--horizontal vr -->
+
+    <TextView
+        android:id="@+id/textViewMeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Meal Plan"
+        android:textSize="20sp"
+        android:paddingTop="40sp"
+        android:paddingBottom="20sp"
+        android:textColor="#0588CC"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#33707070"
+        android:layout_marginBottom="20sp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textPastePrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0$"
+                    android:textSize="18sp"
+                    android:paddingHorizontal="30sp"
+                    android:paddingVertical="15sp" />
+
+                <ImageButton
+                    android:id="@+id/imagePaste"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:padding="20sp"
+                    app:srcCompat="@drawable/ic_paste" />
+
+                <TextView
+                    android:id="@+id/textPaste"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Food paste"
+                    android:textSize="18sp"
+                    android:padding="20sp"/>
+
+                <CheckBox
+                    android:id="@+id/checkPaste"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="invisible" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textMeatPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20$"
+                    android:textSize="18sp"
+                    android:paddingHorizontal="30sp"
+                    android:paddingVertical="15sp" />
+
+                <ImageButton
+                    android:id="@+id/imageMeat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_meat"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center"
+                    android:padding="10sp"/>
+
+                <TextView
+                    android:id="@+id/textMeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Irradiated meat"
+                    android:textSize="18sp"
+                    android:padding="20sp"/>
+
+                <CheckBox
+                    android:id="@+id/checkMeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textDrinksPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10$"
+                    android:textSize="18sp"
+                    android:paddingHorizontal="30sp"
+                    android:paddingVertical="15sp" />
+
+                <ImageButton
+                    android:id="@+id/imageDrinks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_drinks"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center"
+                    android:padding="10sp"/>
+
+                <TextView
+                    android:id="@+id/textDrinks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Dried drinks"
+                    android:textSize="18sp"
+                    android:padding="20sp"/>
+
+                <CheckBox
+                    android:id="@+id/checkDrinks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </RadioGroup> <!--horizontal vr -->
+
+        <Button
+            android:id="@+id/btn_purchase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:textSize="20sp"
+            android:padding="20dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_border_light"
+            android:gravity="center"/>
+
+    </TableLayout>
+
+</ScrollView>
